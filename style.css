@@ -1,0 +1,171 @@
+/* geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: #323232; 
+}
+
+body {
+  margin: 0;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../../Testes/img/ja.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+
+}
+ 
+a, label {
+  font-size: .8rem;
+}
+
+a:hover {
+  color: #0909f3;
+}
+
+/* conteiner login */
+
+#login-container {
+  background-color: rgb(10, 10, 19);
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 30px;
+  margin-top: 10vh;
+  border-radius: 10px;
+  
+}
+/* formulario */
+
+form {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+label, input {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border-bottom: 2px solid #323232;
+}
+
+#forget-pass {
+  text-align: right;
+  display: block;
+}
+
+input[type="submit"] {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: rgb(10, 10, 19);
+  background-color: #FF8C00;
+  cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #25a2a2;
+  transition: .5s;
+}
+
+/* redes socias */
+
+#social-conteiner, #social-conteiner p {
+  margin-bottom: 20px;
+}
+
+#social-conteiner i {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  color: #FFF;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/*Textos*/
+
+h1 {
+  font-size: 200px;
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+  margin-right: 220px;
+}
+
+#centro{
+  margin-left:20%;
+  margin-right:20%;
+}
+
+/*Teste temporário*/
+
+.btn-login {
+  margin-left:65%;
+  margin-right:20%;
+  bottom: 20px;
+  margin-bottom: 0px;
+  
+}
+
+.msg-colab {
+  margin-left:20%;
+  margin-right:20%;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+}
+
+#ctg{
+  margin-left: 0px;
+  font-size: 19px;
+  width: 142px;
+  display: inline-block;
+  
+  
+}
+
+#file{
+  margin-left: 238px;
+  font-size:17px;
+  width: 746px;
+  color: rgb(149, 149, 154);
+
+}
+
