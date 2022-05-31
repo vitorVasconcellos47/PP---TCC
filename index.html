@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/controller.js"></script>
+
+    </head>
+
+<body class="parallax"> <div id="container-imagem"> <br><br><br>
+        
+    <p style="text-align: center; color: rgb(255, 255, 255)">Por um mundo mais iluminado! </p> <h1 style="text-align: center; color: rgb(255, 255, 255)">iLume</h1>
+
+    <div id="login-container"> 
+
+
+    </div> <br><br><br>   
+
+        <div id="login-container">   <br><br>
+
+            <h3 style="text-align: center; color: rgb(255, 255, 255)">Iluminação</h3>
+            <p></p>
+    
+        </div> <br><br><br>
+
+            <div id="login-container"> <form method="post" action="cadastrar.php"> </form>
+            
+                <h2 style="text-align: center; color: rgb(255, 255, 255)">Formulário de Denúncia</h2>  <br><br>
+
+            <div id="centro">
+              <input type="text" name="cep" id="cep" placeholder="CEP (local denunciado)" autocomplete="off" maxlength="9" onkeyup="mascara_cep()" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> 
+            </div>
+
+            <div id="centro">
+                <input type="text" name="pr" id="pr" placeholder="Ponto de referência" maxlength="100"> 
+            </div>
+
+            <div id="centro" >
+                <select style="text-align: center;" id="ctg">
+                    <option selected disabled>Categorias</option>
+                    <option>Vandalismo</option>
+                    <option>Furto</option>
+                    <option>Climático</option>
+                    <option>Trânsito</option>
+                </select>
+            </div><br> 
+
+            <div >
+                <input id="file" type="file"> 
+            </div>      
+          
+            <div class="btn-login">
+                <span class="msg-colab">Obrigado pela colaboração!
+                <input id="botao" type="submit" value="denunciar" onkeypress="$(this).mask('00000-000')" onclick="verificar()">
+                </span>
+            </div> 
+
+            <div> 
+                
+            </div>
+
+            </div>
+
+</body>
+
+<!--<div> 
+                <span class="msg-colab" style="color: rgb(255, 255, 255)">Obrigado pela colaboração! </span>
+            </div>
+
+            <div class="btn-login">
+                <input type="button" value="login">
+                
+            </div> -->
+
+</html>
+
