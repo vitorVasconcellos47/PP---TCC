@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/backgroundVideo.css">
+    <script src="js/controller.js"></script>
+</head>
+    
+<!-- CABEÇALHO -->
+
+    <header>
+        <nav class="nav">
+
+            <img src="logo.png" width="100" height="100">
+            <p id="anchor_denuncia1"  class="logo">iLume</p> 
+
+            <div class="mobile-menu">
+                <div class="line1"></div> <div class="line2"></div> <div class="line3"></div>
+            </div>
+
+            <ul class="nav-list">
+
+              <li><p>Sobre</p></li> <li><p>Ajuda</p></li> <li><p>Cadastrar</p></li> <li><p>Relacionados</p></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+<body>
+
+    <div class="ParallaxVideo">
+        <video full-size autoplay muted loop> <source src="video.mp4" type="video/mp4"> </video>
+    </div>
+    
+        <a id="cabecalho1" href="#anchor_denuncia1"><input id="anchor" type="submit" value=" " class="ef-glow2"></a>
+        <a id="cabecalho2" href="#anchor_denuncia2"><input id="anchor" type="submit" value=" " class="ef-glow2"></a>
+        <a id="cabecalho3" href="#anchor_denuncia3"><input id="anchor" type="submit" value=" " class="ef-glow2"></a>
+        <a id="cabecalho4" href="#anchor_denuncia4"><input id="anchor" type="submit" value=" " class="ef-glow2"></a>
+
+<!-- GRÁFICOS -->
+
+    <div id="login-container"> 
+  
+        <h3 id="anchor_denuncia2">Gráficos</h3>
+        
+
+    </div> <br><br><br>   
+
+<!-- TEXTOS -->
+
+    <div id="login-container">   <br><br>
+  
+        <h3 id="anchor_denuncia3"> Iluminação </h3>
+    
+    </div> <br><br><br>
+
+<!-- DENÚNCIA -->
+
+    <div id="form-container"> <form method="post" action="cadastrar.php"></form>
+            
+        <h2 id="anchor_denuncia4">Formulário de Denúncia</h2> <br><br>
+
+            <div id="centro">
+              <input class="input" name="cep" id="cep" placeholder="CEP (local denunciado)" autocomplete="off" maxlength="9" onkeyup="mascara_cep()" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> 
+            </div>
+
+            <div id="centro">
+                <input class="input"type="text" name="pr" id="pr" placeholder="Ponto de referência" maxlength="100"> 
+            </div>
+
+            <div id="centro" >
+                <select id="ctg" >
+                    <option selected disabled>Categorias</option>
+                    <option>Vandalismo</option>
+                    <option>Furto</option>
+                    <option>Climático</option>
+                    <option>Batida</option>
+                </select>
+            </div><br> 
+
+            <div>
+                <input id="file" type="file"> 
+            </div> 
+
+             <div id="centro">
+                <label class="msg-colab">Obrigado pela colaboração!</label><input id="submit" type="submit" class="ef-glow" class="align" value="denunciar"  onkeypress="$(this).mask('00000-000')" onclick="anchor()">
+            </div>
+
+    </div>
+
+</body>
+
+</html>
