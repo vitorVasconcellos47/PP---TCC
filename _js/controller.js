@@ -1,14 +1,13 @@
 function verificar(){ 
 
-    var cep = document.getElementById("cep").value;
-    var ctg = document.getElementById("ctg").value;
-    var file = document.getElementById("file").value;
+    var cep = document.getElementById('cep').value;
+    var ctg = document.getElementById('ctg').value;
+    var file = document.getElementById('file').value;
 
     if(!cep || !ctg || !file){
-
-        alert("Favor preencher todos os campos")
+        alert("Preencher todos os campos, por favor!")
     } else{
-        alert("Campos preenchidos com sucesso");
+        alert("Campos preenchidos com sucesso, Obrigado pela colaboração!");
     }
 }
 

@@ -147,12 +147,13 @@ html {
 
 #login-container {
   background-color: rgb(13, 13, 24);
-  width: 1300px;
+  /* width: 1300px; */
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
   margin-top: 10vh;
-  border-radius: 10px;
+  height: 100px;
+  /* border-radius: 10px; */
 }
 
 /* FORMULÁRIO - DENÚNCIA */
@@ -228,3 +229,19 @@ form {
 .ef-glow:hover, .ef-glow:focus, .ef-glow:active {
   box-shadow: 0 0 8px rgb(255,147,41);
 }
+
+.hr{
+  position: relative;
+} 
+
+img{
+  position: absolute;
+ /* width: 100p; */
+}
+
+.ft-sobre{
+  left: 50px;
+  width:200px;
+  height:200px;
+}
+
