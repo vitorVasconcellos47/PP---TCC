@@ -1,0 +1,474 @@
+
+/* Importação de letras Google  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Área do mapa */
+
+.mapBox{
+  position: relative;
+  margin-top: 160px;
+  width: 1305px;
+  height: 300px;
+  background: #222455;
+  border-radius: 15px;
+  box-shadow: 0 1px 3px #000;
+  margin-left: 20px;
+  z-index: 10;
+}
+
+/* Configurações do mapa */
+
+.mapBox iframe{
+  width: 92%;
+  height: 70%;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+/* Área dos gráficos */
+
+.graphBox{
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+  min-height: 200px;
+  z-index: 10;
+}
+
+.graphBox .box{
+  position: relative;
+  background: #222455;
+  padding: 20px;
+  width: 99.5%;
+  border-radius: 15px;
+  box-shadow: 0 1px 3px #000;
+}
+
+/* Título dos gráficos */
+
+h2{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #5D5D64;
+}
+
+/* Área dos formulários e carregador de arquivos */
+
+.containerBox{
+  position: relative;
+  width: 100%;
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-gap: 30px;
+  min-height: 200px;
+}
+
+/* Área dos formulários - feedback e denúncia */
+
+container{
+  position: relative;
+  min-height: 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5;
+  top: 65px;
+}
+
+input::placeholder{
+  color: #fff;
+}
+
+textarea::placeholder{
+  color: #fff;
+}
+
+/* Feedback */
+
+container .container .user .feedBx{
+  position: relative;
+  width: 50%;
+  min-width: 448px;
+  height: 112%;
+  background: #222455;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+  top: -95px;
+  border-radius: 15px;
+  box-shadow: 0 1px 3px #000;
+  z-index: 10;
+}
+
+container .container{
+  position: relative;
+  width: 800px;
+  height: 500px;
+}
+
+/* Cores dos itens - feedback título */
+
+container .container .user .feedBx h2{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #5D5D64;
+}
+
+/* Cores dos itens - feedback inputs */
+
+container .container .user .feedBx input{
+  width: 100%;
+  padding: 10px;
+  background: #222455;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* Cores dos itens - feedback textarea */
+
+container .container .user .feedBx textarea{
+  width: 100%;
+  height: 138px;
+  padding: 10px;
+  background: #222455;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+textarea::-webkit-scrollbar{
+  width: 3em;
+}
+
+/* Cores dos itens - feedback botão */
+
+container .container .user .feedBx input[type="button"]{
+  max-width: 100px;
+  background: #F29247;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+/* Animação - feedback botão */
+
+container .container .user .feedBx input[type="button"]{
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+container .container .user .feedBx input:hover[type="button"]{
+  box-shadow: 0 0 8px #F29247;
+}
+
+/* Cores dos itens - feedback textinho */
+
+container .container .user .feedBx .signup{
+  position: relative;
+  margin-top: 20px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #5D5D64;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* Formulário de denúncia */
+
+container .container .user .formBx{
+  position: relative;
+  width: 50%;
+  min-width: 448px;
+  height: 112%;
+  margin-left: 10px;
+  margin-top: 10px;
+  background: #222455;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+  top: -95px;
+  border-radius: 15px;
+  box-shadow: 0 1px 3px #000;
+  z-index: 10;
+}
+
+container .container{
+  max-width: 400px;
+}
+
+/* Cores dos itens - denúncia título */
+
+container .container .user .formBx h2{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #5D5D64;
+}
+
+/* Cores dos itens - denúncia inputs */
+
+container .container .user .formBx input{
+  width: 100%;
+  padding: 10px;
+  background: #222455;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* Cores dos itens - textarea inputs */
+
+container .container .user .formBx textarea{
+  width: 100%;
+  padding: 10px;
+  background: #222455;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* Cores dos itens - denúnciar botão */
+
+container .container .user .formBx input[type="button"]
+{
+  max-width: 100px;
+  background: #E83C6D;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+/* Animação - denunciar botão */
+
+container .container .user .formBx input[type="button"]{
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+container .container .user .formBx input:hover[type="button"]{
+  box-shadow: 0 0 8px #E83C6D;
+}
+
+/* Cores dos itens - denúncia textinho */
+
+container .container .user .formBx .signup{
+  position: relative;
+  margin-top: 20px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #5D5D64;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* Carregador de arquivos */
+
+.archive{
+  height: 560px;
+  width: 50%;
+  min-width: 348px;
+  padding: 30px;
+  background: #222455;
+  box-shadow: 0 1px 3px #000;
+  z-index: 10;
+  position: relative;
+  border-radius: 15px;
+  margin-left: 38px;
+}
+
+/* Cores dos itens - arquivos título */
+
+.archive header{
+font-size: 18px;
+font-weight: 600;
+margin-top: 16px;
+text-transform: uppercase;
+letter-spacing: 2px;
+text-align: center;
+width: 100%;
+margin-bottom: 10px;
+color: #5D5D64;
+}
+
+.archive form{
+  height: 170px;
+  display: flex;
+  margin: 30px 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #fff;
+}
+
+/* Cores dos itens - arquivos logo */
+
+form :where(i){
+  color: #E83C6D;
+}
+
+form i{
+  font-size: 50px;
+}
+
+/* Cores dos itens - arquivos textinho */
+
+form p{
+position: relative;
+margin-top: 20px;
+font-size: 13px;
+letter-spacing: 1px;
+color: #5D5D64;
+text-transform: uppercase;
+font-weight: 300;
+}
+
+/* Cores dos itens - arquivos área de envio */
+
+section .row{
+  background: #fff;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Cores dos itens - arquivos pasta */
+
+section .row i{
+  font-size: 30px;
+  color: #E83C6D;
+}
+
+section .details span{
+  font-size: 14px;
+}
+
+.progress-area .row .content{
+  width: 100%;
+  margin-left: 15px;
+}
+
+.progress-area .details{
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  justify-content: space-between;
+}
+
+/* Cores dos itens - arquivos barra de progresso */
+
+.progress-area .progress-bar{
+height: 6px;
+width: 100%;
+background: #fff;
+margin-bottom: 4px;
+border-radius: 30px;
+}
+
+.progress-bar .progress{
+height: 100%;
+width: 0%;
+background: #E83C6D;
+border-radius: inherit;
+}
+
+.uploaded-area{
+max-height: 230px;
+overflow: scroll;
+}
+
+.uploaded-area.onprogress{
+max-height: 150px;
+}
+
+.uploaded-area::-webkit-scrollbar{
+width: 0px;
+}
+
+.uploaded-area .row .content{
+display: flex;
+align-items: center;
+}
+
+.uploaded-area .row .details{
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+}
+
+.uploaded-area .details .size{
+font-size: 11px;
+color: #222455;
+}
+
+/* Cores dos itens - arquivos concluído */
+
+.uploaded-area .fa-check{
+color: #E83C6D;
+font-size: 16px;
+}

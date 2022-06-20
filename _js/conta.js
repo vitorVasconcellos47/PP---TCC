@@ -1,3 +1,6 @@
+
+// Troca de Slides
+
 function toggleForm(){
     section = document.querySelector('section');
     container = document.querySelector('.container');
@@ -5,31 +8,32 @@ function toggleForm(){
     section.classList.toggle('active');
 }
 
-//Funcões de verificações
+// Registrar
 
-function verificar(){ 
+function registrar(){ 
 
-    var name = document.getElementById('name').value;
-    var password = document.getElementById('password').value;    
+    var reguser = document.getElementById('reguser').value;
+    var regpass = document.getElementById('regpass').value;    
 
-    if ( !name || !password ){
-        alert("Preencha todos os campos de Login, por favor!")
+    if ( !reguser || !regpass ){
+        alert("Preencha todos os campos de registro, por favor!")
     } else{
         window.location.href="index.php";    
     }
 }
 
-function verificar1(){ 
+// Cadastrar
 
-    var name1 = document.getElementById('name1').value;
-    var email1 = document.getElementById('email1').value;
-    var password1 = document.getElementById('password1').value;
-    var confirm1 = document.getElementById('confirm1').value;
+function cadastrar(){ 
 
-    if ( !name1 || !email1 || !password1 || !confirm1){
+    var caduser = document.getElementById('caduser').value;
+    var cademail = document.getElementById('cademail').value;
+    var cadpass = document.getElementById('cadpass').value;
+    var cadfirm = document.getElementById('cadfirm').value;
+
+    if ( !caduser || !cademail || !cadpass || !cadfirm){
         alert("Preencha todos os campos do cadastro, por favor!")
     } else{
         window.location.href="index.php";    
     }
 }
-

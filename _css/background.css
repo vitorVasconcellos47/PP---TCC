@@ -1,36 +1,44 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+/* Cor de fundo */
+
 body{
-    background: rgb(13, 13, 24);
+    background: #2E2E60;
 }
 
-.bubbles{
+/* Background fixo */
+
+.parallax{ 
+    top: 0;
+    object-fit: cover;
+    position: fixed;
+    z-index: 1;
+  }
+
+/* Funcionalidades */
+
+.luzes{
     position: relative;
     display: flex;
 }
-.bubbles span{
+
+.luzes span{
     position: relative;
-    width: 30px;
-    height: 30px;
-    background: #4fc3dc;
     margin: 0 4px;
     border-radius: 50%;
-    box-shadow: 0 0 0 10px #4fc3dc44,
-    0 0 50px #4fc3dc,
-    0 0 100px #4fc3dc;
+    width: 30px;
+    height: 30px;
     animation: anima 15s linear infinite;
     animation-duration: calc(125s / var(--i));
+    background: #8DC1E4;
+    box-shadow: 0 0 0 10px #8DC1E444, 0 0 50px #8DC1E4, 0 0 100px #8DC1E4;
 }
 
-.bubbles span:nth-child(even){
-    background: #ffbc2d;
-    box-shadow: 0 0 0 10px #ffbc2d44,
-    0 0 50px #ffbc2d,
-    0 0 100px #ffbc2d;
+.luzes span:nth-child(even){
+    background: #E0B720;
+    box-shadow: 0 0 0 10px #E0B72044, 0 0 50px #E0B720, 0 0 100px #E0B720;
 }
+
+/* Animação */
 
 @keyframes anima{
     0%{
@@ -40,11 +48,19 @@ body{
         transform: translateY(-10vh) scale(1);
     }
 }
-
-.parallax{ 
-    top: 0;
-    object-fit: cover;
-    position: fixed;
-    z-index: 5;
-  }
   
+/* Paleta de cores */
+
+.paleta{
+    color: #2E2E60;
+    color: #222455;
+    color: #E0B720;
+    color: #8DC1E4;
+    color: #25D85C;
+    color: #F29247;
+    color: #9932F5;
+    color: #F4A2BE;
+    color: #E83C6D;
+    color: #5D5D64;
+    color: #fff;
+}

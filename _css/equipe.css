@@ -1,3 +1,6 @@
+
+/* Importação de letras Google  */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
   margin: 0;
@@ -6,67 +9,99 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body{
-  background: rgb(13, 13, 24);
-}
-h1{
+/* BEVG */
+
+h1{ 
+  margin-top: 120px;
   font-size: 45px;
-  margin-top: 90px;
-  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
   text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #fff;
 }
+
+/* Área dos cartões */
+
 .container{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* Cartões */
+
 .card{
   height: 450px;
   width: 290px;
   margin: 20px;
-  box-shadow: 0 3px 5px #000;
-  border-radius: 10px;
+  box-shadow: 0 1px 3px #000;
+  border-radius: 15px;
   overflow: hidden;
   text-align: center;
-  background-color: #fff;
-  z-index: 8;
+  background-color: #222455;
+  z-index: 10;
 }
 
-.card .bg-image img{
+/* Cartões - imagem */
+
+.card .imagem img{
   width: 100%;
   height: 230px;
   object-fit: cover;
   clip-path: polygon(0 0, 100% 0%, 100% 70%, 45% 100%, 0 70%);
 }
-.card .pic img{
+
+/* Cartões - fotos */
+
+.card .foto img{
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  border: 10px solid #fff;
+  border: 10px solid #222455;;
   margin-top: -90px;
   position: relative;
 }
+
+/* Cartões - nomes */
+
 .card .info h3{
-  color: rgb(13, 13, 24);
-  font-size: 20px;
-  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #fff;
 }
+
+/* Cartões - função */
+
 .card .info span{
   font-size: 15px;
-  color: rgb(64,156,255);
+  color: #EA87DF;
 }
+
+/* Cartões - textinho */
+
 .card .info p{
   font-size: 13px;
   padding: 10px 20px;
-  color: #555;
+  color: #5D5D64;
 }
-.card .info .icons a{
+
+/* Cartões - rede social */
+
+.card .info .ícones a{
   font-size: 20px;
   text-decoration: none;
-  color: rgb(13, 13, 24);
+  color: #9932F5; 
   margin-top: 20px;
   padding: 0 5px;
 }
-.card .info .icons a:hover{
-  color: rgb(64,156,255);
+
+.card .info .ícones a:hover{
+  color: #EA87DF;
 }

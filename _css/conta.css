@@ -1,32 +1,42 @@
+
+/* Importação de letras Google  */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-section{
+
+/* Área do formulário */
+
+container{
   position: relative;
+  top: 65px;
   min-height: 90vh;
-  background: rgb(13, 13, 24);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   transition: 0.5;
-  top: 65px;
 }
 
-section .container{
+container .container{
   position: relative;
   width: 800px;
   height: 500px;
-  background: #fff;
-  box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+  background: #222455;
   overflow: hidden;
-  z-index: 8;
+  border-radius: 15px;
+  box-shadow: 0 1px 3px #000;
+  z-index: 10;
 }
-section .container .user{
+
+/* Itens dentro do formulário */
+
+container .container .user{
   position: absolute;
   top: 0;
   left: 0;
@@ -35,14 +45,14 @@ section .container .user{
   display: flex;
 }
 
-section .container .user .imgBx{
+container .container .user .imgBx{
   position: relative;
   width: 50%;
   height: 100%;
   transition: 0.5;
 }
 
-section .container .user .imgBx img{
+container .container .user .imgBx img{
   position: absolute;
   top: 0;
   left: 0;
@@ -51,38 +61,25 @@ section .container .user .imgBx img{
   object-fit: cover;
 }
 
-section .container .user .formBx{
+/* Cores dos itens - escritas */
+
+container .container .user .formBx{
   position: relative;
   width: 50%;
   height: 100%;
-  background: #fff;
+  background: #222455;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  transition: 0.5s;
+  transition: 0.5s; 
 }
 
-img{
-  width: 334px;
-}
-
-section .container .user .formBx h2{
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 10px;
-  color: #555;
-}
-
-section .container .user .formBx input{
+container .container .user .formBx input{
   width: 100%;
   padding: 10px;
-  background: #f5f5f5;
-  color: #333;
+  background: #222455;
+  color: #fff;
   border: none;
   outline: none;
   box-shadow: none;
@@ -92,100 +89,160 @@ section .container .user .formBx input{
   font-weight: 300;
 }
 
-section .container .user .formBx input[type="button"]
-{
+input::placeholder{
+  color: #fff;
+}
+
+/* Cores dos itens - registrar título */
+
+container .container .user .formBx h2{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #25D85C;
+}
+
+/* Cores dos itens - cadastrar título */
+
+container .container .user.cad .formBx h2{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #F29247;
+}
+
+/* Cores dos itens - registrar botão */
+
+container .container .user .formBx input[type="button"]{
   max-width: 100px;
-  background: rgb(64,156,255);
+  background: #25D85C;
   color: #fff;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
   transition: 0.5s;
+  border-radius: 10px;
 }
 
-section .container .user.signupBx .formBx input[type="button"]
+/* Animação - registrar botão */
+
+container .container .user .formBx input[type="button"]{
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+container .container .user .formBx input:hover[type="button"]{
+  box-shadow: 0 0 8px #25D85C;
+}
+
+/* Animação - cadastrar botão */
+
+container .container .user.cad .formBx input[type="button"]
 {
-  background: rgb(255,147,47);
+  background: #F29247;
 }
 
-section .container .user .formBx .signup{
+container .container .user.cad .formBx input[type="button"]{
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+container .container .user.cad .formBx input:hover[type="button"]{
+  box-shadow: 0 0 8px #F29247;
+}
+
+/* Cores dos itens - textinho */
+
+container .container .user .formBx .signup{
   position: relative;
   margin-top: 20px;
   font-size: 12px;
   letter-spacing: 1px;
-  color: #555;
+  color: #5D5D64;
   text-transform: uppercase;
   font-weight: 300;
 }
 
-section .container .user .formBx .signup a{
+/* Cores dos itens - botão de texto */
+
+container .container .user .formBx .signup a{
   font-weight: 600;
   text-decoration: none;
-  color: rgb(64,156,255);
+  color: #25D85C;
 }
 
-section .container .user.signupBx .formBx .signup a{
-  color: rgb(255,147,47);
+container .container .user.cad .formBx .signup a{
+  font-weight: 600;
+  text-decoration: none;
+  color: #F29247;
 }
 
-section .container .signupBx{
+/* Itens dentro do formulário - códigos adicionais */
+
+container .container .cad{
   pointer-events: none;
 }
 
-section .container.active .signupBx{
+container .container.active .cad{
   pointer-events: initial;
 }
 
-section .container .signupBx .formBx{
+container .container .cad .formBx{
   top: 100%;
 }
 
-section .container.active .signupBx .formBx{
+container .container.active .cad .formBx{
   top: 0;
 }
 
-section .container .signupBx .imgBx{
+container .container .cad .imgBx{
   top: -100%;
   transition: 0.5s;
 }
 
-section .container.active .signupBx .imgBx{
+container .container.active .cad .imgBx{
   top: 0;
 }
 
-
-section .container .signinBx .formBx{
+container .container .reg .formBx{
   top: 0;
   transition: 0.5;
 }
 
-section .container.active .signinBx .formBx{
+container .container.active .reg .formBx{
   top: 100%;
-  
 }
 
-section .container .signinBx .imgBx{
+container .container .reg .imgBx{
   top: 0;
-  
 }
 
-section .container.active .signinBx .imgBx{
+container .container.active .reg .imgBx{
   top: -100%;
 }
 
+/* NÃO SEI OQUE FAZ */
+
 @media (max-width: 991px){
-  section .container{
+  container .container{
     max-width: 400px;
   }
-  section .container .imgBx{
+  container .container .imgBx{
     display: none;
   }
-  section .container .user .formBx{
+  container .container .user .formBx{
     width: 100%;
   }
-  section .container.active .signinBx .formBx{
+  container .container.active .reg .formBx{
     top: -100%;
   }
-  
 }

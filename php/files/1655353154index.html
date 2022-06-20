@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Home</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel='stylesheet' href="background.css"/>
+  <link rel='stylesheet' href="header.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+  <script src='form.js'></script>
+  
+</head>
+
+
+  <div class="nav">
+    <div class="logo">
+      iLume
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#" style="color:rgb(64,156,255)">Home</a></li>
+        <li><a href="conta.html">Conta</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="suporte.html">Suporte</a></li>
+      </ul>
+    </div>
+  </div>
+
+<div class="left">
+  <container>
+    <div class="container">
+      <div class="user signinBx">
+        <div class="formBx">
+          <div>
+            <h2>Formulário de denúncia</h2>
+  
+            <input name="name" id="name" type="text" placeholder="Apelido">
+            
+            <input name="cep" id="cep" type="text" placeholder="CEP da denúncia" autocomplete="off" maxlength="9" onkeyup="mascara_cep()" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+          
+            <textarea name="msg" id="msg" type="text" style="resize: none" placeholder="Mensagem"></textarea>
+          
+            <input type="submit" value="Denunciar" onclick="verificar()">
+            
+            <p class="signup">Ao enviar a denúncia, iremos atualizar nosso sistema!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </container>
+</div>
+
+<div class="right">
+  <div class="wrapper">
+    <header>Carregador de arquivos</header>
+    <form action="#">
+      <input type="file" class="file-input" name="file" hidden>
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Procurar Arquivo para Carregar</p>
+      </form>
+        <section class="progress-area"></section>
+        <section class="uploaded-area"></section>
+      </div>
+      <script src='script.js'></script>
+</div>
+
+
+      <div class="parallax">
+        <div class="container">
+          <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>

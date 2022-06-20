@@ -1,76 +1,112 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Conta</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='_css/home.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='_css/header.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='_css/background.css'>
-  
-  <script src='_js/home.js'></script>
+  <meta charset="utf-8"> 
+  <title> Home </title>
+  <link rel="stylesheet" href="_css/header.css">
+  <link rel="stylesheet" href="_css/background.css">
+  <link rel="stylesheet" href="_css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="_js/conta.js"></script>
 </head>
 <body>
-  <div class="nav">
-    <div class="logo">
-      iLume
-    </div>
-    <div class="menu">
-      <ul>
-        <li><a href="#" style="color:rgb(64,156,255)">Home</a></li>
-        <li><a href="conta.php">Conta</a></li>
-        <li><a href="artigos.php">Artigos</a></li>
-        <li><a href="equipe.php">Equipe</a></li>
-        <li><a href="suporte.php">Suporte</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- <div id="login-container">
-
-  </div> -->
-
-
-
-
-
-
-
-
-
-
   
-  <section>
-  <div class="container">
-    <div class="user signinBx">
-      <div class="formBx">
-        <form>
-          <h2>Formulário de denúncia</h2>
+<!-- Cabeçalho -->
 
-          <input name="name" id="name" type="text" placeholder="Apelido">
-          
-          <input name="cep" id="cep" type="text" placeholder="CEP da denúncia" autocomplete="off" maxlength="9" onkeyup="mascara_cep()" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-        
-          <textarea name="msg" id="msg" type="text" style="resize: none" placeholder="Mensagem"></textarea>
-        
-          <input type="submit" value="Denunciar" onclick="verificar()">
-          
-          <p class="signup">Ao enviar a denúncia, iremos atualizar nosso sistema!</p>
-        </form>
-      </div>
-    </div>
-</section>
+<div class="nav">
+  <div class="logo"> iLume </div>
+  <div class="menu">
+    <ul>
+      <li><a href="#" style="color:#9932F5"> Home </a></li>
+      <li><a href="conta.php" > Conta </a></li>
+      <li><a href="artigos.php"> Artigos </a></li>
+      <li><a href="equipe.php"> Equipe </a></li>
+    </ul>
+  </div>
 </div>
 
-  
+<!-- Mapa -->
 
- 
+<div class="mapBox">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.5072090598214!2d-51.18192658487752!3d-23.26101295645456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb5b3c89a38993%3A0xbb54ac4c6d64d4f9!2sZona%20Norte%20-%20Londrina%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1655444317138!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div> 
 
+<!-- Gráfico polarArea -->
+
+<div class="graphBox">
+  <div class="box"> <h2> Motivos </h2> <canvas id="myChart"></canvas></div>
+
+<!-- Gráfico bar -->
+
+  <div class="box"> <h2> Bairros </h2> <canvas id="myChart2"></canvas></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+<script src="_js/my_chart.js"></script>
+
+<!-- Feedback -->
+
+<div class="containerBox">
+<container>
+  <div class="container">
+    <div class="user">
+      <div class="feedBx">
+        <div>
+          <h2> Feedback </h2>
+          <input type="text" id="feeduser" placeholder="Nome de usuário">
+          <input type="text" id="feedemail" placeholder="Endereço de email">
+          <textarea type="text" id="feedcomment" style="resize: none" placeholder="Comentário"></textarea>
+            <input type="button" class="light" value="Enviar" onclick="feedback()">
+            <p class="signup"> Texto que eu esqueci o que ia colocar... </p>
+            <p class="signup"> Ao enviar as denúncias, iremos atualizar nosso sistema! </p>     
+        </div>
+      </div>
+    </div>
+  </div>
+</container>
+
+<!-- Formulário de denúncia -->
+
+<div class="center">
+<container>
+  <div class="container">
+    <div class="user">
+      <div class="formBx">
+        <div>
+          <h2> Formulário de denúncia </h2>
+          <input type="text" id="denuser" placeholder="Nome de usuário">
+          <input type="text" id="denemail" placeholder="Endereço de email">
+          <input type="text" id="dencep" placeholder="CEP denunciado" maxlength="9" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="maskcep()">
+          <input type="text" id="denpoint"  placeholder="Ponto de referência">
+          <textarea type="text" style="resize: none" placeholder="Comentário (opcional)"></textarea>
+            <input type="button" class="light" value="Denunciar" onclick="denunciar()">
+            <p class="signup"> Anexados devem apresentar qualidades gráficas e audio visuais decentes! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</container>
+</div>
+
+<!-- Carregador de arquivos -->
+
+<div class="archive">
+          <header> Carregador de arquivos </header>
+          <form action="#">
+          <input type="file" id="denarchive" class="file-input" name="file" hidden>
+          <i class="fas fa-cloud-upload-alt"></i>
+          <p> Procurar Arquivo para Carregar </p>
+          </form>
+            <section class="progress-area"></section>
+            <section class="uploaded-area"></section>
+  </div>
+            <script src="_js/script.js"></script>
+</div>
+
+<!-- Luzes -->
 
 <div class="parallax">
-  <div class="container">
-    <div class="bubbles">
+    <div class="luzes">
       <span style="--i:11;"></span>
       <span style="--i:12;"></span>
       <span style="--i:24;"></span>
@@ -112,45 +148,7 @@
       <span style="--i:13;"></span>
       <span style="--i:26;"></span>
     </div>
-  </div>
 </div>
 
 </body>
 </html>
-
-
-
-
-
-<!-- 
-   
-  <h2 id="anchor_denuncia4">Formulário de Denúncia</h2> <br><br>
-
-      <div id="centro">
-        <input class="input" name="cep" id="cep" placeholder="CEP (local denunciado)" autocomplete="off" maxlength="9" onkeyup="mascara_cep()" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> 
-      </div>
-
-      <div id="centro">
-          <input class="input"type="text" name="pr" id="pr" placeholder="Ponto de referência" maxlength="100"> 
-      </div>
-
-      <div id="centro" >
-          <select id="ctg" >
-              <option selected disabled>Categorias</option>
-              <option>Vandalismo</option>
-              <option>Furto</option>
-              <option>Climático</option>
-              <option>Batida</option>
-          </select>
-      </div><br> 
-
-      <div>
-          <input id="file" type="file"> 
-      </div> 
-
-       <div id="centro">
-          <label class="movimentação"><input id="submit" type="submit" class="ef-glow" class="align" value="denunciar"  onkeypress="$(this).mask('00000-000')" onclick="verificar()"></label>
-       </div>
-</div>
-</body>
-</html> -->
