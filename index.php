@@ -34,7 +34,7 @@
 <!-- Gráfico polarArea -->
 
 <div class="graphBox">
-  <div class="box"> <h2> Motivos </h2> <canvas id="myChart"></canvas></div>
+  <div class="box"> <h2> Causas </h2> <canvas id="myChart"></canvas></div>
 
 <!-- Gráfico bar -->
 

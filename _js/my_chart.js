@@ -6,7 +6,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['Vandalismo', 'Furto', 'Evento climático', 'Acidente rodoviário', 'Falta de infraestrutura', 'Queda de energia', 'Outros'],
         datasets: [{
-            label: 'Motivos',
+            label: 'Causas',
             data: [12, 19, 3, 5, 2, 3, 4],
             backgroundColor: [
                 '#476FF4',
