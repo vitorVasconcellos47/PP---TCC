@@ -27,11 +27,12 @@ container .container{
   position: relative;
   width: 800px;
   height: 500px;
-  background: #222455;
+  background: #292D2E;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 1px 3px #000;
   z-index: 10;
+  border: 1px solid #666666;
 }
 
 /* Itens dentro do formulário */
@@ -67,7 +68,7 @@ container .container .user .formBx{
   position: relative;
   width: 50%;
   height: 100%;
-  background: #222455;
+  background: #1F2223;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +79,8 @@ container .container .user .formBx{
 container .container .user .formBx input{
   width: 100%;
   padding: 10px;
-  background: #222455;
+  background: #292D2E;
+  border-radius: 5px;
   color: #fff;
   border: none;
   outline: none;
@@ -93,7 +95,7 @@ input::placeholder{
   color: #fff;
 }
 
-/* Cores dos itens - registrar título */
+/* Cores dos itens - entrar título */
 
 container .container .user .formBx h2{
   font-size: 18px;
@@ -103,7 +105,7 @@ container .container .user .formBx h2{
   text-align: center;
   width: 100%;
   margin-bottom: 10px;
-  color: #25D85C;
+  color: #9932F5;
 }
 
 /* Cores dos itens - cadastrar título */
@@ -116,14 +118,14 @@ container .container .user.cad .formBx h2{
   text-align: center;
   width: 100%;
   margin-bottom: 10px;
-  color: #F29247;
+  color: #FF79BD;
 }
 
-/* Cores dos itens - registrar botão */
+/* Cores dos itens - entrar botão */
 
 container .container .user .formBx input[type="button"]{
   max-width: 100px;
-  background: #25D85C;
+  background: #9932F5;
   color: #fff;
   cursor: pointer;
   font-size: 14px;
@@ -133,7 +135,7 @@ container .container .user .formBx input[type="button"]{
   border-radius: 10px;
 }
 
-/* Animação - registrar botão */
+/* Animação - entrar botão */
 
 container .container .user .formBx input[type="button"]{
   -webkit-transition-duration: 0.3s;
@@ -141,14 +143,14 @@ container .container .user .formBx input[type="button"]{
 }
 
 container .container .user .formBx input:hover[type="button"]{
-  box-shadow: 0 0 8px #25D85C;
+  box-shadow: 0 0 8px #9932F5;
 }
 
 /* Animação - cadastrar botão */
 
 container .container .user.cad .formBx input[type="button"]
 {
-  background: #F29247;
+  background: #FF79BD;
 }
 
 container .container .user.cad .formBx input[type="button"]{
@@ -157,7 +159,7 @@ container .container .user.cad .formBx input[type="button"]{
 }
 
 container .container .user.cad .formBx input:hover[type="button"]{
-  box-shadow: 0 0 8px #F29247;
+  box-shadow: 0 0 8px #FF79BD;
 }
 
 /* Cores dos itens - textinho */
@@ -177,13 +179,13 @@ container .container .user .formBx .signup{
 container .container .user .formBx .signup a{
   font-weight: 600;
   text-decoration: none;
-  color: #25D85C;
+  color: #9932F5;
 }
 
 container .container .user.cad .formBx .signup a{
   font-weight: 600;
   text-decoration: none;
-  color: #F29247;
+  color: #FF79BD;
 }
 
 /* Itens dentro do formulário - códigos adicionais */

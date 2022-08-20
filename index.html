@@ -17,9 +17,9 @@
   <div class="menu">
     <ul>
       <li><a href="#" style="color:#9932F5"> Home </a></li>
-      <li><a href="conta.php" > Conta </a></li>
-      <li><a href="artigos.php"> Artigos </a></li>
-      <li><a href="equipe.php"> Equipe </a></li>
+      <li><a href="conta.html" > Conta </a></li>
+      <li><a href="artigos.html"> Artigos </a></li>
+      <li><a href="equipe.html"> Equipe </a></li>
     </ul>
   </div>
 </div>
@@ -38,7 +38,7 @@
 
 <!-- Gráfico bar -->
 
-  <div class="box"> <h2> Bairros </h2> <canvas id="myChart2"></canvas></div>
+  <div class="box"> <h2> Bairros de Londrina </h2> <canvas id="myChart2"></canvas></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
@@ -75,10 +75,23 @@
         <div>
           <h2> Formulário de denúncia </h2>
           <input type="text" id="denuser" placeholder="Nome de usuário">
-          <input type="text" id="denemail" placeholder="Endereço de email">
-          <input type="text" id="dencep" placeholder="CEP denunciado" maxlength="9" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="maskcep()">
+          <input type="text" id="denend" placeholder="Endereço de destino">
+          <input type="text" id="dennum" placeholder="Número da residência" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+          
+          <select type="select" id="dencause">
+            <option disabled selected hidden>Causa do incidente</option>
+            <option value="valor1">Vandalismo</option>
+            <option value="valor2">Furto</option>
+            <option value="valor3">Evento climático</option>
+            <option value="valor4">Acidente rodoviário</option>
+            <option value="valor5">Falta de infraestrutura</option>
+            <option value="valor6">Queda de energia</option>
+            <option value="valor7">Outros</option>
+          </select>
+
           <input type="text" id="denpoint"  placeholder="Ponto de referência">
-          <textarea type="text" style="resize: none" placeholder="Comentário (opcional)"></textarea>
+          
             <input type="button" class="light" value="Denunciar" onclick="denunciar()">
             <p class="signup"> Anexados devem apresentar qualidades gráficas e audio visuais decentes! </p>
         </div>
@@ -91,21 +104,33 @@
 <!-- Carregador de arquivos -->
 
 <div class="archive">
-          <header> Carregador de arquivos </header>
+          <header> Arquivados </header>
           <form action="#">
           <input type="file" id="denarchive" class="file-input" name="file" hidden>
-          <i class="fas fa-cloud-upload-alt"></i>
+          <i><img src="_gallery/cloud.png" class="cloud"></i>
           <p> Procurar Arquivo para Carregar </p>
           </form>
             <section class="progress-area"></section>
-            <section class="uploaded-area"></section>
+            <section class="uploaded-area" style="color:#D3CFC9"></section>
   </div>
             <script src="_js/script.js"></script>
 </div>
 
+<footer>
+  <div class="footer-content">
+    <div class="footBox">
+      <div class="fbox"> <img class="tam1" src="_gallery/marista.png"> </div>
+      <div class="fbox"> <img class="tam2" > </div>
+    </div>
+  </div>
+<div class="footer-bottom">
+  <p>Copyright &copy;2022 iLume. designed by <span>BEVG</span></p>
+</div>
+</footer>
+
 <!-- Luzes -->
 
-<div class="parallax">
+<!-- <div class="parallax">
     <div class="luzes">
       <span style="--i:11;"></span>
       <span style="--i:12;"></span>
@@ -148,7 +173,7 @@
       <span style="--i:13;"></span>
       <span style="--i:26;"></span>
     </div>
-</div>
+</div> -->
 
 </body>
 </html>

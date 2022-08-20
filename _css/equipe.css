@@ -9,22 +9,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* BEVG */
-
-h1{ 
-  margin-top: 85px;
-  font-size: 45px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
 /* Área dos cartões */
 
 .container{
+  margin-top: 120px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -40,8 +28,9 @@ h1{
   border-radius: 15px;
   overflow: hidden;
   text-align: center;
-  background-color: #222455;
+  background-color: #1F2223;
   z-index: 10;
+  border: 1px solid #666666;
 }
 
 /* Cartões - imagem */
@@ -59,7 +48,7 @@ h1{
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  border: 10px solid #222455;;
+  border: 10px solid #1F2223;
   margin-top: -90px;
   position: relative;
 }
@@ -74,14 +63,14 @@ h1{
   text-align: center;
   width: 100%;
   margin-bottom: 10px;
-  color: #fff;
+  color: #D3CFC9;
 }
 
 /* Cartões - função */
 
 .card .info span{
   font-size: 15px;
-  color: #EA87DF;
+  color: #FF79BD;
 }
 
 /* Cartões - textinho */
@@ -89,7 +78,7 @@ h1{
 .card .info p{
   font-size: 13px;
   padding: 10px 20px;
-  color: #5D5D64;
+  color: #666666;
 }
 
 /* Cartões - rede social */
@@ -103,5 +92,7 @@ h1{
 }
 
 .card .info .ícones a:hover{
-  color: #EA87DF;
+  color: #FF79BD;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }

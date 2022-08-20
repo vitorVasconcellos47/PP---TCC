@@ -20,13 +20,14 @@ else {
 function denunciar(){ 
 
 var denuser = document.getElementById('denuser').value;
-var denemail = document.getElementById('denemail').value;
-var dencep = document.getElementById('dencep').value;
+var denend = document.getElementById('denend').value;
+var dennum = document.getElementById('dennum').value;
+var dencause = document.getElementById('dencause').value;
 var denpoint = document.getElementById('denpoint').value;
 var denarchive = document.getElementById('denarchive').value;
     
 
-if ( !denuser || !denemail || !dencep || !denpoint || !denarchive ){
+if ( !denuser || !denend || !dennum || !dencause || !denpoint || !denarchive ){
     alert("Preencha todos os campos da denúncia, por favor!")
 }
 
@@ -38,13 +39,13 @@ else {
 
 // Denúncia - CEP
 
-function maskcep() {
+// function maskcep() {
 
-if(dencep.value.length == 5) {
-        dencep.value += "-"
-    }
+// if(dencep.value.length == 5) {
+//         dencep.value += "-"
+//     }
 
-}
+// }
 
 // Carregador de arquivos
 

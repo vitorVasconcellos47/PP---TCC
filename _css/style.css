@@ -16,11 +16,12 @@
   margin-top: 160px;
   width: 1305px;
   height: 300px;
-  background: #222455;
+  background: #1F2223;
   border-radius: 15px;
   box-shadow: 0 1px 3px #000;
   margin-left: 20px;
   z-index: 10;
+  border: 1px solid #666666;
 }
 
 /* Configurações do mapa */
@@ -30,6 +31,7 @@
   height: 70%;
   margin-left: 50px;
   margin-top: 50px;
+  border-radius: 5px;
 }
 
 /* Área dos gráficos */
@@ -48,11 +50,12 @@
 
 .graphBox .box{
   position: relative;
-  background: #222455;
+  background: #1F2223;
   padding: 20px;
   width: 99.5%;
   border-radius: 15px;
   box-shadow: 0 1px 3px #000;
+  border: 1px solid #666666;
 }
 
 /* Título dos gráficos */
@@ -65,7 +68,7 @@ h2{
   text-align: center;
   width: 100%;
   margin-bottom: 10px;
-  color: #5D5D64;
+  color: #666666;
 }
 
 /* Área dos formulários e carregador de arquivos */
@@ -94,11 +97,11 @@ container{
 }
 
 input::placeholder{
-  color: #fff;
+  color: #D3CFC9;
 }
 
 textarea::placeholder{
-  color: #fff;
+  color: #D3CFC9;
 }
 
 /* Feedback */
@@ -108,7 +111,7 @@ container .container .user .feedBx{
   width: 50%;
   min-width: 448px;
   height: 112%;
-  background: #222455;
+  background: #1F2223;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,6 +121,7 @@ container .container .user .feedBx{
   border-radius: 15px;
   box-shadow: 0 1px 3px #000;
   z-index: 10;
+  border: 1px solid #666666;
 }
 
 container .container{
@@ -136,7 +140,7 @@ container .container .user .feedBx h2{
   text-align: center;
   width: 100%;
   margin-bottom: 10px;
-  color: #5D5D64;
+  color: #FF79BD;
 }
 
 /* Cores dos itens - feedback inputs */
@@ -144,8 +148,9 @@ container .container .user .feedBx h2{
 container .container .user .feedBx input{
   width: 100%;
   padding: 10px;
-  background: #222455;
-  color: #fff;
+  background: #292d2e;
+  border-radius: 5px;
+  color: #D3CFC9;
   border: none;
   outline: none;
   box-shadow: none;
@@ -161,8 +166,9 @@ container .container .user .feedBx textarea{
   width: 100%;
   height: 138px;
   padding: 10px;
-  background: #222455;
-  color: #fff;
+  background: #292d2e;
+  border-radius: 5px;
+  color: #D3CFC9;
   border: none;
   outline: none;
   box-shadow: none;
@@ -173,15 +179,15 @@ container .container .user .feedBx textarea{
 }
 
 textarea::-webkit-scrollbar{
-  width: 3em;
+  width: 1px;
 }
 
 /* Cores dos itens - feedback botão */
 
 container .container .user .feedBx input[type="button"]{
   max-width: 100px;
-  background: #F29247;
-  color: #fff;
+  background: #FF79BD;
+  color: #D3CFC9;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
@@ -198,7 +204,7 @@ container .container .user .feedBx input[type="button"]{
 }
 
 container .container .user .feedBx input:hover[type="button"]{
-  box-shadow: 0 0 8px #F29247;
+  box-shadow: 0 0 8px #FF79BD;
 }
 
 /* Cores dos itens - feedback textinho */
@@ -208,7 +214,7 @@ container .container .user .feedBx .signup{
   margin-top: 20px;
   font-size: 13px;
   letter-spacing: 1px;
-  color: #5D5D64;
+  color: #666666;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -222,7 +228,7 @@ container .container .user .formBx{
   height: 112%;
   margin-left: 10px;
   margin-top: 10px;
-  background: #222455;
+  background: #1F2223;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,6 +238,7 @@ container .container .user .formBx{
   border-radius: 15px;
   box-shadow: 0 1px 3px #000;
   z-index: 10;
+  border: 1px solid #666666;
 }
 
 container .container{
@@ -248,7 +255,7 @@ container .container .user .formBx h2{
   text-align: center;
   width: 100%;
   margin-bottom: 10px;
-  color: #5D5D64;
+  color: #9932F5;
 }
 
 /* Cores dos itens - denúncia inputs */
@@ -256,8 +263,9 @@ container .container .user .formBx h2{
 container .container .user .formBx input{
   width: 100%;
   padding: 10px;
-  background: #222455;
-  color: #fff;
+  background: #292d2e;
+  border-radius: 5px;
+  color: #D3CFC9;
   border: none;
   outline: none;
   box-shadow: none;
@@ -267,13 +275,36 @@ container .container .user .formBx input{
   font-weight: 300;
 }
 
+select{
+  width: 100%;
+  padding: 12px;
+  background: #292d2e;
+  border-radius: 5px;
+  color: #D3CFC9;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
 /* Cores dos itens - textarea inputs */
 
 container .container .user .formBx textarea{
   width: 100%;
   padding: 10px;
-  background: #222455;
-  color: #fff;
+  background: #292d2e;
+  border-radius: 5px;
+  color: #D3CFC9;
   border: none;
   outline: none;
   box-shadow: none;
@@ -288,8 +319,8 @@ container .container .user .formBx textarea{
 container .container .user .formBx input[type="button"]
 {
   max-width: 100px;
-  background: #E83C6D;
-  color: #fff;
+  background: #9932F5;
+  color: #D3CFC9;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
@@ -306,7 +337,7 @@ container .container .user .formBx input[type="button"]{
 }
 
 container .container .user .formBx input:hover[type="button"]{
-  box-shadow: 0 0 8px #E83C6D;
+  box-shadow: 0 0 8px #9932F5;
 }
 
 /* Cores dos itens - denúncia textinho */
@@ -316,7 +347,7 @@ container .container .user .formBx .signup{
   margin-top: 20px;
   font-size: 13px;
   letter-spacing: 1px;
-  color: #5D5D64;
+  color: #666666;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -328,12 +359,13 @@ container .container .user .formBx .signup{
   width: 50%;
   min-width: 348px;
   padding: 30px;
-  background: #222455;
+  background: #1F2223;
   box-shadow: 0 1px 3px #000;
   z-index: 10;
   position: relative;
   border-radius: 15px;
   margin-left: 38px;
+  border: 1px solid #666666;
 }
 
 /* Cores dos itens - arquivos título */
@@ -347,7 +379,7 @@ letter-spacing: 2px;
 text-align: center;
 width: 100%;
 margin-bottom: 10px;
-color: #5D5D64;
+color: #9932F5;
 }
 
 .archive form{
@@ -359,35 +391,54 @@ color: #5D5D64;
   justify-content: center;
   flex-direction: column;
   border-radius: 5px;
-  border: 2px dashed #fff;
+  border: 2px #292d2e;
+  background: #292d2e;
 }
 
 /* Cores dos itens - arquivos logo */
 
-form :where(i){
-  color: #E83C6D;
+img{
+  margin-left: 70px;
+  margin-top: -25px;
+  width: 50%;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
-form i{
-  font-size: 50px;
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 0 var(--cor-neon));
+  }
+  to {
+    filter: drop-shadow(0 0 2px var(--cor-neon));
+  }
+}
+
+img:hover {
+  animation: neon 0.3s forwards;
+}
+
+.cloud {
+  --cor-neon: #9932F5;
 }
 
 /* Cores dos itens - arquivos textinho */
 
 form p{
 position: relative;
-margin-top: 20px;
+margin-top: -20px;
 font-size: 13px;
 letter-spacing: 1px;
-color: #5D5D64;
+color: #D3CFC9;
 text-transform: uppercase;
 font-weight: 300;
+z-index: 50;
 }
 
 /* Cores dos itens - arquivos área de envio */
 
 section .row{
-  background: #fff;
+  background: #292d2e;
   margin-bottom: 10px;
   list-style: none;
   padding: 15px 20px;
@@ -401,7 +452,7 @@ section .row{
 
 section .row i{
   font-size: 30px;
-  color: #E83C6D;
+  color: #9932F5;
 }
 
 section .details span{
@@ -425,7 +476,7 @@ section .details span{
 .progress-area .progress-bar{
 height: 6px;
 width: 100%;
-background: #fff;
+background: #292d2e;
 margin-bottom: 4px;
 border-radius: 30px;
 }
@@ -433,7 +484,7 @@ border-radius: 30px;
 .progress-bar .progress{
 height: 100%;
 width: 0%;
-background: #E83C6D;
+background: #9932F5;
 border-radius: inherit;
 }
 
@@ -463,12 +514,78 @@ align-items: center;
 
 .uploaded-area .details .size{
 font-size: 11px;
-color: #222455;
+color: #292d2e;
 }
 
 /* Cores dos itens - arquivos concluído */
 
 .uploaded-area .fa-check{
-color: #E83C6D;
+color: #9932F5;
 font-size: 16px;
+}
+
+/* Rodapé */
+
+footer{
+  margin-top: 85px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #292D2E;
+  z-index: 15;
+  box-shadow: 0 1px 3px #000;
+  color: #D3CFC9;
+  border-top: 1px solid #666666;
+}
+
+/* Rodapé - tamanho das imagens */
+
+.tam1{
+  margin-left: 525px;
+  margin-top: -20px;
+  width:200%;
+  
+}
+
+/* Rodapé - Área das imagens */
+
+.footBox{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+  z-index: 10;
+}
+
+.footBox .fbox{
+  margin-top: 50px;
+  position: relative;
+  width: 150px;
+  height: 83px;
+}
+
+/* Rodapé 2 */
+
+.footer-bottom{
+  background: #1F2223;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Rodapé 2 - Copyright */
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+}
+
+/* Rodapé 2 - BEVG */
+
+.footer-bottom span{
+  text-transform: none;
+  
+  font-weight: 200;
 }

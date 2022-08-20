@@ -60,3 +60,22 @@ section{
 .content .imgBox img{
   max-width: 600px;
 }
+
+
+
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 0 var(--cor-neon));
+  }
+  to {
+    filter: drop-shadow(0 0 8px var(--cor-neon));
+  }
+}
+
+img:hover {
+  animation: neon 0.3s forwards;
+}
+
+.starbucks {
+  --cor-neon: #8DC1E4;
+}

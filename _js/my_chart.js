@@ -9,14 +9,13 @@ var myChart = new Chart(ctx, {
             label: 'Causas',
             data: [12, 19, 3, 5, 2, 3, 4],
             backgroundColor: [
-                '#476FF4',
-                '#F4A2BE',
-                '#25D85C',
-                '#E83C6D',
+                '#8b19ee',
                 '#9932F5',
-                '#F29247',
-                '#8DC1E4',
-                '#8DC1E4'
+                '#600da8',
+                '#684983',
+                '#bc88e9',
+                '#583577',
+                '#985dcc'
             ],
             borderColor: [
                 '#222455'
@@ -38,10 +37,10 @@ var myChart = new Chart(myChart2, {
             label: 'Zona Norte',
             data: [12, 19, 3, 5, 2, 3, 5, 7, 9, 2],
             backgroundColor: [
-                '#E83C6D'
+                '#9932F5'
             ],
             borderColor: [
-                '#222455'
+                '#9932F5'
                 
             ],
             borderWidth: 1

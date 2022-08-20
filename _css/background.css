@@ -2,7 +2,18 @@
 /* Cor de fundo */
 
 body{
-    background: #2E2E60;
+    background: #181A1B;
+}
+
+/* Barra de scroll do site */
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background: #181A1B;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: #454A4D;
 }
 
 /* Background fixo */
@@ -29,13 +40,13 @@ body{
     height: 30px;
     animation: anima 15s linear infinite;
     animation-duration: calc(125s / var(--i));
-    background: #8DC1E4;
-    box-shadow: 0 0 0 10px #8DC1E444, 0 0 50px #8DC1E4, 0 0 100px #8DC1E4;
+    background: #FF79BD;
+    box-shadow: 0 0 0 10px #FF79BD44, 0 0 50px #FF79BD, 0 0 100px #FF79BD;
 }
 
 .luzes span:nth-child(even){
-    background: #E0B720;
-    box-shadow: 0 0 0 10px #E0B72044, 0 0 50px #E0B720, 0 0 100px #E0B720;
+    background: #9932F5;
+    box-shadow: 0 0 0 10px #9932F544, 0 0 50px #9932F5, 0 0 100px #9932F5;
 }
 
 /* Animação */
@@ -47,20 +58,4 @@ body{
     100%{
         transform: translateY(-10vh) scale(1);
     }
-}
-  
-/* Paleta de cores */
-
-.paleta{
-    color: #2E2E60;
-    color: #222455;
-    color: #E0B720;
-    color: #8DC1E4;
-    color: #25D85C;
-    color: #F29247;
-    color: #9932F5;
-    color: #F4A2BE;
-    color: #E83C6D;
-    color: #5D5D64;
-    color: #fff;
 }
