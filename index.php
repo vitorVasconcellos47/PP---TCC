@@ -17,9 +17,9 @@
   <div class="menu">
     <ul>
       <li><a href="#" style="color:#9932F5"> Home </a></li>
-      <li><a href="conta.html" > Conta </a></li>
-      <li><a href="artigos.html"> Artigos </a></li>
-      <li><a href="equipe.html"> Equipe </a></li>
+      <li><a href="conta.php" > Conta </a></li>
+      <li><a href="artigos.php"> Artigos </a></li>
+      <li><a href="equipe.php"> Equipe </a></li>
     </ul>
   </div>
 </div>
@@ -130,7 +130,7 @@
 
 <!-- Luzes -->
 
-<!-- <div class="parallax">
+<div class="parallax">
     <div class="luzes">
       <span style="--i:11;"></span>
       <span style="--i:12;"></span>
@@ -173,7 +173,7 @@
       <span style="--i:13;"></span>
       <span style="--i:26;"></span>
     </div>
-</div> -->
+</div>
 
 </body>
 </html>

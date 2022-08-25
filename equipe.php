@@ -15,9 +15,9 @@
   <div class="logo"> iLume </div>
   <div class="menu">
     <ul>
-      <li><a href="index.html"> Home </a></li>
-      <li><a href="conta.html" > Conta </a></li>
-      <li><a href="artigos.html"> Artigos </a></li>
+      <li><a href="index.php"> Home </a></li>
+      <li><a href="conta.php" > Conta </a></li>
+      <li><a href="artigos.php"> Artigos </a></li>
       <li><a href="#" style="color:#9932F5"> Equipe </a></li>
     </ul>
   </div>
