@@ -16,6 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `causa_denuncia`
+--
+
+DROP TABLE IF EXISTS `causa_denuncia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `causa_denuncia` (
+  `id_causa_denuncia` int(11) NOT NULL AUTO_INCREMENT,
+  `desc_causa_denuncia` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_causa_denuncia`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `causa_denuncia`
+--
+
+LOCK TABLES `causa_denuncia` WRITE;
+/*!40000 ALTER TABLE `causa_denuncia` DISABLE KEYS */;
+/*!40000 ALTER TABLE `causa_denuncia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `denuncia`
 --
 
@@ -25,12 +48,14 @@ DROP TABLE IF EXISTS `denuncia`;
 CREATE TABLE `denuncia` (
   `id_denuncia` int(11) NOT NULL AUTO_INCREMENT,
   `cep_denuncia` varchar(9) NOT NULL,
-  `cat_denuncia` varchar(45) NOT NULL,
+  `causa_denuncia` varchar(45) NOT NULL,
   `arquivo_denuncia` varchar(100) NOT NULL,
   `ref_denuncia` varchar(100) DEFAULT NULL,
   `num_residencia_denuncia` varchar(30) DEFAULT NULL,
-  `usuario_id_usuario` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_denuncia`)
+  `id_usuario` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_denuncia`),
+  KEY `fk_denuncia_usuario` (`id_usuario`),
+  CONSTRAINT `fk_denuncia_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -52,10 +77,12 @@ DROP TABLE IF EXISTS `feedback`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `feedback` (
   `id_feedback` int(11) NOT NULL AUTO_INCREMENT,
-  `usuario_id_usuario` int(11) DEFAULT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
   `mensagem_feedback` varchar(500) NOT NULL,
   `arquivo_feedback` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`id_feedback`)
+  PRIMARY KEY (`id_feedback`),
+  KEY `fk_feedback_usuario` (`id_usuario`),
+  CONSTRAINT `fk_feedback_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -77,9 +104,9 @@ DROP TABLE IF EXISTS `tipo_usuario`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tipo_usuario` (
   `id_tipo_usuario` int(11) NOT NULL AUTO_INCREMENT,
-  `simples_usuario` varchar(20) DEFAULT NULL,
+  `desc_tipo_usuario` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id_tipo_usuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,6 +115,7 @@ CREATE TABLE `tipo_usuario` (
 
 LOCK TABLES `tipo_usuario` WRITE;
 /*!40000 ALTER TABLE `tipo_usuario` DISABLE KEYS */;
+INSERT INTO `tipo_usuario` VALUES (1,'administrador'),(2,'comum');
 /*!40000 ALTER TABLE `tipo_usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -103,9 +131,11 @@ CREATE TABLE `usuario` (
   `nome_usuario` varchar(60) NOT NULL,
   `email_usuario` varchar(100) NOT NULL,
   `senha_usuario` varchar(70) NOT NULL,
-  `tipo_usuario_id_tipo_usuario` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `id_tipo_usuario` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_usuario`),
+  KEY `fk_usuario_tipo_usuario` (`id_tipo_usuario`),
+  CONSTRAINT `fk_usuario_tipo_usuario` FOREIGN KEY (`id_tipo_usuario`) REFERENCES `tipo_usuario` (`id_tipo_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -114,6 +144,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (1,'vitor','vitor@gmail.com','123',1),(2,'vitor','vitor@gmail.com','123',2);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -126,4 +157,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-30 13:44:28
+-- Dump completed on 2022-08-31 17:22:50
