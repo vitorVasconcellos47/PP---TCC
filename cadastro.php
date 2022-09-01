@@ -5,7 +5,7 @@
     $email_usuario = $_POST['email'];
     $senha_usuario = $_POST['senha'];
 
-    $usuario = "INSERT INTO usuario (nome, email, senha) VALUES ('$nome_usuario', '$email_usuario', '$senha_usuario')";
+    $usuario = "INSERT INTO usuario (nome_usuario, email_usuario, senha_usuario, id_tipo_usuario) VALUES ('$nome_usuario', '$email_usuario', '$senha_usuario', 2)";
     
     if(mysqli_query($conn, $usuario)){
         echo "<h1>Novo cadastro realizado com sucesso</h1>";

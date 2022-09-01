@@ -25,39 +25,43 @@
 
 <!-- Registrar -->
 
-<container>
-  <div class="container">
-    <div class="user reg">
-      <div class="imgBx"><img src="_gallery/registrar.jpeg"></div>
-      <div class="formBx">
-        <div>
-          <h2> Entrar </h2>
-          <input type="text" id="reguser" placeholder="Nome de usuário">
-          <input type="password" id="regpass" placeholder="Senha">
-            <input type="button" value="Logar" onclick="registrar()">
-            <p class="signup"> Não tem uma conta criada? <a href="#" onclick="toggleForm()"> Cadastre-se. </a></p>
+
+  <container>
+    <div class="container">
+      <div class="user reg">
+        <div class="imgBx"><img src="_gallery/registrar.jpeg"></div>
+        <div class="formBx">
+          <div>
+            <h2> Entrar </h2>
+            <input type="text" id="reguser" placeholder="Nome de usuário">
+            <input type="password" id="regpass" placeholder="Senha">
+              <input type="button" value="Logar" onclick="registrar()">
+              <p class="signup"> Não tem uma conta criada? <a href="#" onclick="toggleForm()"> Cadastre-se. </a></p>
+          </div>
         </div>
       </div>
-    </div>
+
 
 <!-- Cadastrar -->
 
-  <div class="user cad">
-      <div class="formBx">
-        <div>
-          <h2> Criar uma conta </h2>
-          <input type="text" id="caduser" placeholder="Nome de usuário">
-          <input type="text" id="email" placeholder="Endereço de email">
-          <input type="password" id="cadpass" placeholder="Crie sua senha">
-          <input type="password" id="cadfirm" placeholder="Confirme sua senha">
-            <input type="button" value="Cadastrar" onclick="cadastrar()">
-            <p class="signup"> Já tem uma conta criada? <a href="#" onclick="toggleForm()"> Entre. </a></p>
+  <form action="cadastro.php" method="POST">
+    <div class="user cad">
+        <div class="formBx">
+          <div>
+            <h2> Criar uma conta </h2>
+            <input type="text" id="caduser" name="nome" placeholder="Nome de usuário">
+            <input type="text" id="email" name="email" placeholder="Endereço de email">
+            <input type="password" id="cadpass" name="senha" placeholder="Crie sua senha">
+            <input type="password" id="cadfirm" placeholder="Confirme sua senha">
+              <input type="submit" value="Cadastrar" onclick="cadastrar()">
+              <p class="signup"> Já tem uma conta criada? <a href="#" onclick="toggleForm()"> Entre. </a></p>
+          </div>
+        </div>
+        <div class="imgBx"><img src="_gallery/cadastrar.jpeg"></div>
         </div>
       </div>
-      <div class="imgBx"><img src="_gallery/cadastrar.jpeg"></div>
-  </div>
-  </div>
-</container>
+    </container>
+  </form>
 
 <!-- Luzes -->
 
